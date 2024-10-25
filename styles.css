@@ -1,3 +1,23 @@
-﻿body
-{
+﻿.navbar {
+    overflow: hidden;
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
 }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+        .navbar a:hover {
+            background-color: white;
+            color: blue;
+        }
