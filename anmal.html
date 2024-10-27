@@ -1,20 +1,46 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anmäl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmälan till kursen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <a href="index.html">Hem</a>
-            <a href="anmal.html"><strong>Anmälan</strong></a>
+        <nav class="navbar">
+            <a href="index.html"><strong>Hem</strong></a>
+            <a href="anmal.html">Anmälan</a>
             <a href="kurser.html">Kurser</a>
-        </div>
-        <h1>Anmäl dig här</h1>
+        </nav>
+        <h1>Anmälan till kurser</h1>
     </header>
+
+    <main>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+            <label for="course">Välj kurs:</label>
+            <select id="course" name="course" required>
+                <option value="html">Introduktionskurs Html</option>
+                <option value="css">Introduktionskurs Css</option>
+                <option value="javascrips">Introduktionskurs javascript</option>
+            </select>
+
+            <label for="comments">Övrig kommentar/info:</label>
+            <textarea id="comments" name="comments" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    
 </body>
 </html>
