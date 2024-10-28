@@ -17,30 +17,34 @@
     </header>
 
     <main>
-        <form action="submit_registration.php" method="post">
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" required>
+        <section class="container2">
+            <div class="text-content form-container">
+                <form action="submit_registration.php" method="post">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="phone">Telefonnummer:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
 
-            <label for="course">Välj kurs:</label>
-            <select id="course" name="course" required>
-                <option value="html">Introduktionskurs Html</option>
-                <option value="css">Introduktionskurs Css</option>
-                <option value="javascrips">Introduktionskurs javascript</option>
-            </select>
+                    <label for="course">Välj kurs:</label>
+                    <select id="course" name="course" required>
+                        <option value="html">Introduktionskurs Html</option>
+                        <option value="css">Introduktionskurs Css</option>
+                        <option value="javascrips">Introduktionskurs javascript</option>
+                    </select>
 
-            <label for="comments">Övrig kommentar/info:</label>
-            <textarea id="comments" name="comments" rows="3"></textarea>
+                    <label for="comments">Övrig kommentar/info:</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+        </section>
     </main>
-
     
+
 </body>
 </html>
